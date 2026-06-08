@@ -1,0 +1,23 @@
+# Windows/Logs
+Thumbs.db
+*.log
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Backend (Java / Maven)
+backend/target/
+backend/bin/
+backend/*.iml
+*.class
+
+
+# Frontend (Node / React)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/npm-debug.log*
