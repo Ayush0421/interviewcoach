@@ -12,9 +12,9 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                // Allow Vite dev server
+                // Allow both local Vite dev server and deployed Vercel/production domains
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173", "http://127.0.0.1:5173")
+                        .allowedOriginPatterns("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
